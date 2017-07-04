@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width,user-scalable=no"/>
+	<link rel="stylesheet"  href="./lib/tau/mobile/theme/default/tau.css">
+	<link rel="stylesheet" type="text/css" href="./css/style.css"/>
+	<title>Tizen Web IDE - Template - Tizen - Tizen Web UI Framework - Multi Page</title>
+</head>
+
+<body>
+	<!-- Start of first page: #one -->
+	<div class="ui-page" id="one">
+		<div class="ui-header">
+			<h1>Multi-page application</h1>
+		</div><!-- /header -->
+
+		<div class="ui-content">
+			
+			<button id="mainTouch">
+        		  <img id="im1" src="images/tizen_32.png" style="width: 300px; height: 300px;">
+        	</button>
+        	<br />
+            <span id="content-text"> 0 </span>
+            <br />
+            Your level is 
+            <span class="levelNumber" id="level"> 1 </span>
+			
+		<ul class="ui-listview">
+			 <li class="ui-group-index">Here you can see a video!</li>
+				 <li class="ui-li-anchor"><a href="#popup" data-rel="popup" data-position-to="window">To show a video</a></li>
+				 <li class="ui-li-anchor"><a href="#three" data-position-to="window">Go to canvas</a></li>
+			</ul>
+			
+			<div id="popup" class="ui-popup center_title_1btn">
+				<div class="ui-popup-header">Popup title</div>
+				<div class="ui-popup-content popup-content-padding">Now you will see a video.</div>
+				<div class="ui-popup-footer">
+					<a class="ui-btn ui-inline" href="#two">Click to see the video</a>
+		</div>
+			</div>
+			
+		</div><!-- /content -->
+	</div><!-- /page one -->
+
+
+	<!-- Start of second page: #two -->
+	<div class="ui-page" id="two">
+		<div class="ui-header">
+			<h1>Two</h1>
+		</div><!-- /header -->
+
+		<div class="ui-content">
+			<h2>The page for a video</h2>
+			<iframe width="200" height="150" src="https://www.youtube.com/embed/1xv_FeBGzfk" frameborder="0" allowfullscreen></iframe>
+			<p><a href="#one" class="ui-btn ui-inline">Back to the game</a></p>
+		</div><!-- /content -->
+	</div><!-- /page two -->
+
+	<script type="text/javascript" src="./lib/tau/mobile/js/tau.js"></script>
+	<script type="text/javascript" src="./lib/jquery.js"> </script>
+	<script src="./js/main.js"></script>
+	
+	<!-- Start of second page: #three -->
+	<div class="ui-page" id="three">
+		<div class="ui-header">
+			<h1>Canvas page</h1>
+		</div><!-- /header -->
+
+		<div class="ui-content">
+			<h2>Canvas</h2>
+			<p> <canvas id='draw' width='321' height='321' style='border:1px solid;'></canvas> </p>
+			<p><a href="#one" class="ui-btn ui-inline">Back to the game</a></p>
+		</div><!-- /content -->
+	</div><!-- /page two -->
+
+	<script type="text/javascript" src="./lib/tau/mobile/js/tau.js"></script>
+	<script type="text/javascript" src="./lib/jquery.js"> </script>
+	<script src="./js/main.js"></script>
+	
+</body>
+</html>
